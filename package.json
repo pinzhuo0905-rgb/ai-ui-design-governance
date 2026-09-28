@@ -1,0 +1,41 @@
+{
+  "name": "ai-ui-design-governance",
+  "version": "1.0.0",
+  "description": "Universal AI UI Design Governance & Anti-Slop Framework: Enforcing Design DNA, Structured Tokens, 10-State Screen Specs, and Headless Browser Verification",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "vibe-governance": "./bin/vibe-governance.mjs"
+  },
+  "scripts": {
+    "format": "biome format --write src tests scripts",
+    "format:check": "biome format src tests scripts",
+    "lint": "biome lint src tests scripts",
+    "lint:fix": "biome lint --write src tests scripts",
+    "ui:tokens": "node scripts/design-token-check.mjs",
+    "ui:lint": "node scripts/ui-review.mjs",
+    "ui:screenshot": "node scripts/screenshot.mjs",
+    "generate:diagrams": "node scripts/generate-design-diagrams.mjs",
+    "test": "node --test tests/governance/*.test.mjs",
+    "quality": "node scripts/verify-fix-loop.mjs"
+  },
+  "keywords": [
+    "ai-design",
+    "ui-governance",
+    "anti-slop",
+    "design-tokens",
+    "design-systems",
+    "headless-browser",
+    "screenshots",
+    "codex",
+    "claude-code",
+    "cursor"
+  ],
+  "author": "Pingus <pinzhuo0905@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
