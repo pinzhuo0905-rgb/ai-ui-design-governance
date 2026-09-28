@@ -15,7 +15,7 @@
     "ui:tokens": "node scripts/design-token-check.mjs",
     "ui:lint": "node scripts/ui-review.mjs",
     "ui:screenshot": "node scripts/screenshot.mjs",
-    "generate:diagrams": "node scripts/generate-design-diagrams.mjs",
+    "generate:diagrams": "node scripts/generate-ui-diagrams.mjs",
     "test": "node --test tests/governance/*.test.mjs",
     "quality": "node scripts/verify-fix-loop.mjs"
   },
