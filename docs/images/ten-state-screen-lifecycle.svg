@@ -2,7 +2,6 @@
   <text x="500" y="45" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">THE 10 MANDATORY PRODUCT UI STATES</text>
   <text x="500" y="72" text-anchor="middle" fill="#94a3b8" font-size="13">Moving Beyond Idealized AI Showcase Demos to Complete Production Software</text>
 
-  <!-- 2 rows of 5 cards -->
   <!-- Row 1 -->
   <!-- 1. Default -->
   <rect x="40" y="110" width="170" height="170" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>

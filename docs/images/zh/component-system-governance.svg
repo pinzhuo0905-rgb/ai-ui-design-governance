@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" style="background:#090d16; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Microsoft YaHei',sans-serif;">
+  <text x="500" y="42" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">组件系统工程化与设计 TOKEN 治理拓扑</text>
+  <text x="500" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">将设计 Token 绑定至组件契约，并在页面装配与门禁中自动强制执行</text>
+
+  <!-- Left Box: Design Tokens (Source of Truth) -->
+  <rect x="40" y="105" width="270" height="375" rx="8" fill="#1e293b" stroke="#0284c7" stroke-width="1.5"/>
+  <rect x="40" y="105" width="270" height="36" rx="8" fill="#0284c7"/>
+  <text x="175" y="128" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">设计 Token (单一事实基准)</text>
+
+  <g transform="translate(60, 165)" font-size="11" fill="#cbd5e1">
+    <text y="0" fill="#38bdf8" font-weight="600">4px 空间步进标准韵律:</text>
+    <text y="20">1: 4px | 2: 8px | 3: 12px | 4: 16px</text>
+    <text y="40">5: 20px | 6: 24px | 8: 32px</text>
+    
+    <text y="75" fill="#38bdf8" font-weight="600">圆角梯度严格上限:</text>
+    <text y="95">none: 0px | sm: 4px</text>
+    <text y="115">md: 6px (默认交互控件)</text>
+    <text y="135">lg: 8px (模态框顶层上限)</text>
+
+    <text y="170" fill="#38bdf8" font-weight="600">单色石板暗黑底色体系:</text>
+    <text y="190">底色: #090d16 | 面板: #0f172a</text>
+    <text y="210">细边框: #334155 | 强调色: #0284c7</text>
+
+    <text y="245" fill="#38bdf8" font-weight="600">标准控件紧凑高度:</text>
+    <text y="265">sm: 28px | md: 34px | lg: 40px</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 310 292 L 355 292" stroke="#0284c7" stroke-width="2"/>
+
+  <!-- Center Box: Standardized Components -->
+  <rect x="360" y="105" width="280" height="375" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <rect x="360" y="105" width="280" height="36" rx="8" fill="#1e293b"/>
+  <text x="500" y="128" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="700">COMPONENTS.md (标准化组件)</text>
+
+  <g transform="translate(380, 165)" font-size="11" fill="#cbd5e1">
+    <text y="0" font-weight="600">• &lt;Button /&gt; (主操作、次操作、危险操作)</text>
+    <text y="24" font-weight="600">• &lt;Input /&gt; (文本、搜索、前置图标插槽)</text>
+    <text y="48" font-weight="600">• &lt;Select /&gt; (单选、多选下拉选择器)</text>
+    <text y="72" font-weight="600">• &lt;Table /&gt; (36px 高密度数据表格)</text>
+    <text y="96" font-weight="600">• &lt;Badge /&gt; (语义化状态徽章)</text>
+    <text y="120" font-weight="600">• &lt;Dialog /&gt; (带遮罩的居中确认对话框)</text>
+    <text y="144" font-weight="600">• &lt;EmptyState /&gt; (单色几何图标 + 引导)</text>
+    <text y="168" font-weight="600">• &lt;LoadingSkeleton /&gt; (等比骨架屏)</text>
+    <text y="192" font-weight="600">• &lt;Toast /&gt; (瞬态操作成功与警告吐司)</text>
+    <text y="216" fill="#10b981" font-weight="600">严禁任意行内魔法数值重写</text>
+    <text y="240" fill="#94a3b8">所有变体严格绑定 Design Token 规范。</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 640 292 L 685 292" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Right Box: Screen Assembly & Audit -->
+  <rect x="690" y="105" width="270" height="375" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="690" y="105" width="270" height="36" rx="8" fill="#047857"/>
+  <text x="825" y="128" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">页面装配与自动化门禁验证</text>
+
+  <g transform="translate(710, 165)" font-size="11" fill="#cbd5e1">
+    <text y="0" fill="#a7f3d0" font-weight="600">工业级核心页面规格:</text>
+    <text y="22">• dashboard.md (治理控制台)</text>
+    <text y="44">• login.md (企业统一鉴权与 SSO)</text>
+    <text y="66">• settings.md (策略与阈值配置)</text>
+    <text y="88">• api-keys.md (智能体密钥保管库)</text>
+
+    <text y="130" fill="#a7f3d0" font-weight="600">门禁自动化静态与动态审查:</text>
+    <text y="152">• npm run ui:tokens (Token 规范校验)</text>
+    <text y="174">• npm run ui:lint (去 AI 塑料味审查)</text>
+    <text y="196">• npm run ui:screenshot (多视口截屏)</text>
+
+    <text y="240" fill="#10b981" font-weight="700">100% 双引擎质量门禁通过</text>
+    <text y="260" fill="#94a3b8">任何未标定塑料味均自动阻断 PR 合入。</text>
+  </g>
+</svg>

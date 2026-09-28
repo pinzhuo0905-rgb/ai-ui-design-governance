@@ -11,23 +11,25 @@
 
 ---
 
-## 1. Why "AI Slop" Plagues AI UI Design
+## 1. AI UI Design Paradigm Shift
 
-When developers prompt: *"Create a modern, clean, premium dashboard"*, the LLM receives near-zero structural context. Consequently:
-1. **Convergence to Internet Averages:** The AI defaults to high-probability Tailwind classes: purple-to-blue gradients, gradient text, glowing card borders, and oversized headers.
-2. **Risk-Avoidance Heuristics:** Asymmetric layouts, dense data grids, and subtle typography carry higher generation failure risks. The model retreats to safe, generic card grids.
-3. **Missing Product Context:** Without explicit knowledge of user expertise, daily session duration, and high-frequency tasks, the AI assumes every page is a consumer marketing showcase.
-4. **Uncalibrated Component Defaults:** Off-the-shelf components from libraries (shadcn/ui, Radix, MUI) are combined with default paddings and radiuses, creating generic library demo aesthetic.
+When AI agents design frontends without deterministic constraints, they inevitably converge to internet averages: purple/blue gradients, glowing cards, and empty marketing whitespace inside internal tools.
 
-### The Solution: Engineering the Design System
+This framework replaces unconstrained generation with **Governed UI Engineering**:
 
-The antidote to AI Slop is not a better prompt—it is **converting product context, design personality, spatial tokens, screen specifications, and headless browser evidence into permanent repository assets.**
+![AI UI Design Paradigm Shift](docs/images/ui-governance-paradigm-shift.svg)
+
+---
+
+## 2. The 6-Layer Anti-Slop Governance Stack
+
+The antidote to AI Slop is not a prompt—it is **converting product context, design personality, spatial tokens, screen specifications, and headless browser evidence into permanent repository assets.**
 
 ![The 6-Layer Anti-Slop Stack](docs/images/anti-slop-hierarchy.svg)
 
 ---
 
-## 2. Evidence-Based Visual Repair Loop
+## 3. Evidence-Based Visual Repair Loop
 
 Never trust source code or JSX as visual evidence. A build pass only proves technical syntax—it does not prove usability, contrast, or responsiveness.
 
@@ -44,7 +46,7 @@ Every UI modification triggers an autonomous verification cycle:
 
 ---
 
-## 3. The 10 Mandatory Product UI States
+## 4. The 10 Mandatory Product UI States
 
 AI prototypes notoriously design only the *Ideal State* (data present, no errors). Professional software requires 10 distinct operational states:
 
@@ -65,7 +67,15 @@ AI prototypes notoriously design only the *Ideal State* (data present, no errors
 
 ---
 
-## 4. Repository Structure
+## 5. Component System & Token Governance
+
+Standardized controls are locked to machine-readable design tokens, preventing arbitrary CSS injection and drift across pages:
+
+![Component System & Token Governance](docs/images/component-system-governance.svg)
+
+---
+
+## 6. Repository Structure
 
 ```text
 ai-ui-design-governance/
@@ -98,7 +108,7 @@ ai-ui-design-governance/
 │   ├── ui-review.mjs                           # Automated anti-slop & state completeness linter
 │   ├── design-token-check.mjs                  # Design token schema & boundary checker
 │   ├── screenshot.mjs                          # Headless browser multi-viewport capture
-│   └── generate-design-diagrams.mjs            # High-definition SVG diagram generator
+│   └── generate-ui-diagrams.mjs                # High-definition SVG diagram generator
 │
 ├── src/presentation/ui/
 │   └── pilot-dashboard.html                    # Accessible, token-compliant pilot dashboard
@@ -109,7 +119,7 @@ ai-ui-design-governance/
 
 ---
 
-## 5. CLI Commands & Quick Start
+## 7. CLI Commands & Quick Start
 
 ```bash
 # 1. Install dependencies
@@ -127,6 +137,9 @@ npm run ui:lint
 # 5. Capture real headless browser screenshots across viewports
 npm run ui:screenshot
 
-# 6. Run design governance tests
+# 6. Re-generate all high-definition SVG diagrams
+npm run generate:diagrams
+
+# 7. Run design governance tests
 npm test
 ```

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" style="background:#090d16; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang SC','Microsoft YaHei',sans-serif;">
+  <defs>
+    <linearGradient id="badGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#991b1b" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="goodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="aiSlopHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="govHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <text x="500" y="42" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700">AI 前端界面设计范式迁移</text>
+  <text x="500" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">从无约束的“AI 塑料味套版”全面转向工程化严谨设计系统</text>
+
+  <!-- Left: AI Slop -->
+  <rect x="40" y="95" width="440" height="395" rx="8" fill="url(#badGrad)" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="55" y="110" width="410" height="34" rx="6" fill="url(#aiSlopHeader)"/>
+  <text x="260" y="132" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">❌ 无约束 AI 随机构建 (AI 塑料味 / SLOP)</text>
+
+  <g transform="translate(65, 170)" font-size="12" fill="#fca5a5">
+    <text y="0">⚠️ 缺乏上下文，模型本能收敛到互联网设计平均值</text>
+    <text y="28">• 泛滥的紫蓝渐变背景与渐变文字标题</text>
+    <text y="56">• 悬浮带色荧光投影 (box-shadow: 0 0 20px #8b5cf6)</text>
+    <text y="84">• 卡片套娃 (Card Soup)：大卡片内部套中卡片套小卡片</text>
+    <text y="112">• 无论普通表格还是表单，全员无脑胶囊按钮 (rounded-full)</text>
+    <text y="140">• 生产力工具内充斥 64px+ 无意义大空白，信息密度极低</text>
+    <text y="168">• 虚假的 KPI 统计卡片与毫无实际意义的伪造折线图</text>
+    <text y="196">• 管理后台硬塞 80px 营销 Hero 横幅，混淆展示与工具</text>
+    <text y="224">• 直接堆砌未经校准的组件库默认尺寸，Demo 感强烈</text>
+    <text y="252">• 只做数据刚刚好的“理想画面”，遇加载、空数据和错误即崩</text>
+    <text y="280">• 只看 JSX/CSS 代码是否通过编译，不看真实浏览器渲染</text>
+  </g>
+
+  <!-- Right: Governed UI -->
+  <rect x="520" y="95" width="440" height="395" rx="8" fill="url(#goodGrad)" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="535" y="110" width="410" height="34" rx="6" fill="url(#govHeader)"/>
+  <text x="740" y="132" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">✔ 工程化 AI 设计治理体系 (GOVERNED UI)</text>
+
+  <g transform="translate(545, 170)" font-size="12" fill="#a7f3d0">
+    <text y="0">🛡️ 明确产品上下文与“临床严谨型”高密度设计人格</text>
+    <text y="28">• 纯黑石板底色 (#090d16) 与 1px 细边框划分空间结构</text>
+    <text y="56">• 严格 4px 空间步进 (4, 8, 12, 16, 20, 24, 32px)，消灭魔法值</text>
+    <text y="84">• 克制圆角上限 (小控件: 4px, 默认: 6px, 模态框: 8px)</text>
+    <text y="112">• 面向数据高密度：优先采用紧凑表格与结构化键值流</text>
+    <text y="140">• 字体梯级与粗细先于背景框，先建立文本层级再画容器</text>
+    <text y="168">• 单点青蓝强调色 (#0284c7) 专用于核心主操作，克制不花哨</text>
+    <text y="196">• 强制涵盖 10 种关键状态 (骨架屏、空数据、异常失败、溢出等)</text>
+    <text y="224">• 自动化去 AI 味静态检查器在提交前机器级拦截违规</text>
+    <text y="252">• 本地无头浏览器抓取桌面、平板与移动端实机高清截图存证</text>
+    <text y="280">• 严格达标 WCAG 2.1 AA 级对比度与全键盘 Tab 焦点可达</text>
+  </g>
+</svg>
